@@ -1,0 +1,43 @@
+{
+  "health_parameter": [
+    {
+      "id": "",
+      "imageview_health":"@drawable/ic_heart",
+      "textview_health": "Heart Rate",
+      "textview_number": "76"
+    },
+
+      {
+        "id": "",
+        "imageview_health":"https://goo.gl/A1Qyoy",
+        "textview_health": "Blood Pressure",
+        "textview_number": "120/80"
+      },
+    {
+      "id": "",
+      "imageview_health":"https://goo.gl/1asZNe",
+      "textview_health": "Height",
+      "textview_number": "5`11``ft"
+    },
+    {
+      "id": "",
+      "imageview_health":"https://goo.gl/XefzQc",
+      "textview_health": "Weight",
+      "textview_number": "80kg"
+    },
+    {
+      "id": "",
+      "imageview_health":"https://goo.gl/A43aV4",
+      "textview_health": "Sugar ",
+      "textview_number": "135mg/dL"
+    },
+
+    {
+      "id": "",
+      "imageview_health":"https://goo.gl/wbYuUj",
+      "textview_health": "ECG",
+      "textview_number": "82bpm"
+    }
+
+  ]
+}

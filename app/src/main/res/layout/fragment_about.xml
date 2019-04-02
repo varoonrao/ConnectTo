@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/relativeabout"
+        tools:ignore="InvalidId">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Your profile"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ralewayregular"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:weightSum="200"
+        android:id="@+id/imglayout"
+        android:fontFamily="@font/ralewayregular"
+        android:layout_below="@+id/relativeabout">
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/image"
+            android:paddingLeft="10dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/agee"
+                android:text="Age : 21 Years"
+                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/ralewayregular"
+                android:paddingTop="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:id="@+id/uplace"
+                android:layout_below="@+id/agee"
+                android:text="Place : Udupi"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/ralewayregular"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:id="@+id/phone"
+                android:layout_below="@+id/uplace"
+                android:fontFamily="@font/ralewayregular"
+                android:paddingTop="10dp"
+                android:text="Phone number: 8549908754"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:id="@+id/blood"
+                android:layout_below="@+id/phone"
+                android:fontFamily="@font/ralewayregular"
+                android:paddingTop="10dp"
+                android:text="Blood Group : O+"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:id="@+id/lastsync"
+                android:layout_below="@+id/blood"
+                android:fontFamily="@font/ralewayregular"
+                android:paddingTop="10dp"
+                android:text="Last Updated : 2 Minutes ago"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imglayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relabut"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/callcaretaker"
+            android:background="@drawable/ic_rectangle_14"
+            android:fontFamily="@font/ralewayregular"
+            android:gravity="center"
+            android:text="Call caretaker"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="onClickDial"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relabut"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/callambu"
+            android:background="@drawable/ic_rectangle_15"
+            android:fontFamily="@font/ralewayregular"
+            android:gravity="center"
+            android:text="Call AMBULANCE"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary" />
+
+
+</RelativeLayout>
